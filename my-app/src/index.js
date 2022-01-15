@@ -192,3 +192,61 @@ import reportWebVitals from './reportWebVitals';
 //     </div>
 //   );
 // }
+
+// Avatar 추출
+// function Avatar(props) {
+//   return (
+//     <img className='Avatar' 
+//       src={props.user.Avatar}
+//       alt={props.user.name}
+//     />
+//   );
+// }
+
+// Comment를 단순하게 표현
+// function Comment(props) {
+//   return (
+//     <div className='Comment'>
+//       <div className='UserInfo'>
+//         <Avatar user={props.autor} />
+//         <div className='UserInfo-name'>
+//           {props.autor.name}
+//         </div>
+//       </div>
+//       <div className='Comment-text'>
+//         {props.text}
+//       </div>
+//       <div className='Comment-date'>
+//         {formatDate(props.date)}
+//       </div>
+//     </div>
+//   );
+// }
+
+// Avatar 옆에 사용자의 이름을 렌더링하는 UserInfo 컴포넌트 추출
+// function UserInfo(props) {
+//   return (
+//     <div className='UserInfo'>
+//       <Avatar user={props.user} />
+//       <div className='UserInfo-name'>
+//         {props.user.name}
+//       </div>
+//     </div>
+//   );
+// }
+
+// 단순해진 Comment
+// function Comment(props) {
+//   return (
+//     <div className='Comment'>
+//       <UserInfo user={props.author} />
+//       <div className='Comment-text'>
+//         {props.text}
+//       </div>
+//       <div className='Comment-date'>
+//         {formatDate(props.date)}
+//       </div>
+//     </div>
+//   );
+// }
+
