@@ -84,6 +84,19 @@ import reportWebVitals from './reportWebVitals';
 //   }
 // };
 
+// 기본(basic) render 설정
+// ReactDOM.render(
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
+  // <h1>Hello world!</h1>,
+//   element,
+//   document.getElementById('root')
+// );
+
+// reportWebVitals();
+
+
 // 엘리먼트 렌더링
 
 // 엘리먼트는 react앱의 가장 작은 단위이다.
@@ -92,18 +105,24 @@ import reportWebVitals from './reportWebVitals';
 // 컴포넌트와 엘리먼트를 혼동하지 말 것!
 // 엘리먼트는 컴포넌트의 구성요소 이므로 다음장에서 설명
 
-const element = <h1>Hello, world</h1>;
+// const element = <h1>Hello, world</h1>;
 
-ReactDOM.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
-  // <h1>Hello world!</h1>,
-  element,
-  document.getElementById('root')
-);
+// element를 ReactDOM.render()로 전달하면 DOM노드에 렌더링
+// const element = <h1>Hello, world</h1>;
+// ReactDOM.render(element,
+//   document.getElementById('root'));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// 현재까지 내용으로 UI를 업데이트 하는 방법 : 새로운 엘리먼트를 생성해 ReactDom.render()로 전달
+// ex: 시계 구현
+function tick() {
+  const element = (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  );
+  ReactDOM.render(element,
+    document.getElementById('root'));
+}
+
+setInterval(tick, 1000);
