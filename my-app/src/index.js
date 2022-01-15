@@ -250,3 +250,15 @@ import reportWebVitals from './reportWebVitals';
 //   );
 // }
 
+// sum 함수 --> 이와 같은 함수를 순수함수라 한다
+// 입력값을 바꾸려 하지 않고 항상 동일한 입력값에 대해 동일한 결과 반환
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// 자신의 입력값을 변경 --> 순수함수가 아닌 함수
+// function withdraw(account, amount) {
+//   account.total -= amount;
+// }
+
+// React 컴포넌트는 자신의 props를 다룰 때 반드시 순수함수처럼 동작해야 한다.
