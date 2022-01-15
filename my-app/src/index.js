@@ -76,13 +76,23 @@ import reportWebVitals from './reportWebVitals';
 //   'Hello, world!'
 // );
 
-const element = {
-  type: 'h1',
-  props: {
-    className: 'greeting',
-    children: 'Hello, world!'
-  }
-};
+// const element = {
+//   type: 'h1',
+//   props: {
+//     className: 'greeting',
+//     children: 'Hello, world!'
+//   }
+// };
+
+// 엘리먼트 렌더링
+
+// 엘리먼트는 react앱의 가장 작은 단위이다.
+// 엘리먼트는 화면에 표시할 내용을 기술한다.
+
+// 컴포넌트와 엘리먼트를 혼동하지 말 것!
+// 엘리먼트는 컴포넌트의 구성요소 이므로 다음장에서 설명
+
+const element = <h1>Hello, world</h1>;
 
 ReactDOM.render(
   // <React.StrictMode>
@@ -97,4 +107,3 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
