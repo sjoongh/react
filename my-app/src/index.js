@@ -114,15 +114,81 @@ import reportWebVitals from './reportWebVitals';
 
 // 현재까지 내용으로 UI를 업데이트 하는 방법 : 새로운 엘리먼트를 생성해 ReactDom.render()로 전달
 // ex: 시계 구현
-function tick() {
-  const element = (
-    <div>
-      <h1>Hello, world!</h1>
-      <h2>It is {new Date().toLocaleTimeString()}.</h2>
-    </div>
-  );
-  ReactDOM.render(element,
-    document.getElementById('root'));
-}
+// function tick() {
+//   const element = (
+//     <div>
+//       <h1>Hello, world!</h1>
+//       <h2>It is {new Date().toLocaleTimeString()}.</h2>
+//     </div>
+//   );
+//   ReactDOM.render(element,
+//     document.getElementById('root'));
+// }
 
-setInterval(tick, 1000);
+// setInterval(tick, 1000);
+
+// 함수 컴포넌트
+// function Welcome(props) {
+//   return <h1>Hello, {props.name}</h1>;
+// }
+
+// ES6 class 컴포넌트
+// class Welcome extends React.Component {
+//   render() {
+//     return <h1>Hello, {this.props.name}</h1>
+//   }
+// }
+
+// 컴포넌트 렌더링
+// function Welcome(props) {
+//   return <h1>Hello, {props.name}</h1>;
+// }
+
+// const element = <Welcome name="Sara" />;
+// ReactDOM.render(
+//   element,
+//   document.getElementById('root')
+// );
+
+// React의 App컴포넌트 활용
+// function Welcome(props) {
+//   return <h1>Hello, {props.name}</h1>;
+// }
+
+// function App() {
+//   return (
+//     <div>
+//       <Welcome name="Sara" />
+//       <Welcome name="Cahal" />
+//       <Welcome name="Edite" />
+//     </div>
+//   );
+// }
+
+// ReactDOM.render(
+//   <App />,
+//   document.getElementById('root')
+// );
+
+// Comment 컴포넌트를 살펴보자
+// function Comment(props) {
+//   return (
+//     <div className="Comment">
+//       <div className='UserInfo'>
+//         <img className='Avatar'
+//           src={props.author.avatarUrl}
+//           alt={props.author.name} 
+//           />
+//         <div className='UserInfo-name'>
+//           {props.author.name}
+//         </div>
+//       </div>
+//       <div className='Comment-text'>
+//         {props.text}
+//       </div>
+//       <div className='Comment-date'>
+//         {FormData(props.date)}
+//       </div>
+//     </div>
+//   );
+// }
