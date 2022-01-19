@@ -96,7 +96,7 @@ import reportWebVitals from './reportWebVitals';
 
 // reportWebVitals();
 
-
+// ----------------------------------------------------------------------------------------------------
 // 엘리먼트 렌더링
 
 // 엘리먼트는 react앱의 가장 작은 단위이다.
@@ -126,6 +126,10 @@ import reportWebVitals from './reportWebVitals';
 // }
 
 // setInterval(tick, 1000);
+
+
+// ---------------------------------------------------------------------------------------
+// Component와 Props
 
 // 함수 컴포넌트
 // function Welcome(props) {
@@ -262,3 +266,6 @@ import reportWebVitals from './reportWebVitals';
 // }
 
 // React 컴포넌트는 자신의 props를 다룰 때 반드시 순수함수처럼 동작해야 한다.
+
+// ------------------------------------------------------------------------------------
+// state and Life cycle
